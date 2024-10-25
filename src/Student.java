@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 
 public class Student {
     private String name;
@@ -31,4 +28,18 @@ public class Student {
     public List<Integer> getGrade() {
         return grade;
     }
-}
+
+    public void setGrade(List<Integer> grade) {
+        this.grade = grade;
+    }
+
+    public float averageGrade(List<Integer> grade){
+        float sum=0;
+        for(Integer i : grade) {
+            sum += i;
+        }
+            return sum/grade.size();
+        }
+
+    }
+
